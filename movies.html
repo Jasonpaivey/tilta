@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuchiddy Movies | Web Series</title>
+
+  <!-- Font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+  <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="webStyle.css">
+  
+
+<!------------------------Scroll to top button------------------------------------------------>
+<style>
+
+
+
+    #scrollToTopButton{
+  position: fixed;
+  bottom: 40px;
+  right: 25px;
+  font-size: 25px;
+  z-index: 99;
+  width: 50px;
+  height: 50px;
+  background-color:red;
+  color:black;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 6px;
+  border-radius: 50%;
+  }
+  #scrollToTopButton:hover, i:hover {
+  background-color:white;
+  color:red;
+  }
+  #nav:hover
+{
+  background-color:#e60e23!important;
+
+}
+.carousel-inner{
+  cursor: pointer;
+}
+
+.nav-item :hover{
+  margin-bottom: 10px;
+  /* background-color: aquamarine; */
+  border-bottom: 3px;
+  border-color: red;
+  border-bottom-style: solid;
+}
+
+    .logo {
+  width: 110px;
+  height: 90px;
+  padding: 3px;
+  margin: 0;
+  padding: 0;
+}
+.fas:hover{background: none!important ;}
+.nav-item{ flex-wrap:wrap;}
+.menu li a:hover {
+  color: red !important;
+  opacity: 0.5;
+}
+.navbar-nav{
+  display: flex;
+  align-items: center;
+  padding: 0px 7.5px;
+}
+
+/* CSS FOR FOOTER */
+.footer{
+margin-bottom:15px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer-content{
+  display:flex;
+  justify-content:space-between;
+  padding: 10px 20px;
+}
+.footer-logo{
+  width: 150px;
+  height: 120px;
+  padding: 3px;
+  margin:0px 0px 0px 10px;
+  padding: 0;
+}
+.footer-heading{
+  color:white;
+}
+.footer-left, .footer-right, .footer-middle{
+text-align:center;
+}
+.icons{
+  margin-left:-30px;
+}
+.footer-links i{
+font-size:30px;
+width:40px;
+padding:5px;
+height:40px;
+margin-top:30px;
+}
+.footer-middle a i:hover{
+background-color:white;
+border-radius:50px;
+color:red;
+}
+.footer-middle-list-item{
+list-style:none;
+font-size:15px;
+font-family:cursive;
+margin:5px 0px 0px 15px;
+text-align:left;
+}
+.footer-middle-list-item a{
+text-decoration:none;
+color:white;
+}
+.footer-middle-list-item a:hover{
+color:red;
+}
+.footer-right{
+  margin-top:-15px;
+}
+.footer-contact-button{
+font-size:20px;
+background-color:red;
+color:black;
+padding:10px;
+border:none;
+border-radius:10px;
+text-decoration:none;
+}
+.footer-contact-button:hover{
+background-color:white;
+color:red;
+}
+.footer-bottom-tagline{
+color:white;
+font-size:15px;
+font-family:cursive;
+margin-bottom:25px;
+}
+
+
+.footer-copyright{
+text-align:center;
+color:white;
+margin-top:20px;
+font-size:18px;
+}
+.footer-hr{
+    color:grey;
+    font-weight:bold;
+}
+/* .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);} */
+
+/***************** Media Queries *********************/
+
+@media (max-width: 600px) {
+.footer-content{
+   display:block;
+   text-align:center;
+}
+.footer-middle-list-item{
+  text-align:center;
+  margin-left:-20px;
+}
+
+.footer-left, .footer-middle, .footer-right{
+  margin-top:50px;
+}
+}
+
+#waterdrop {
+  height: 30px;
+}
+
+#waterdrop canvas {
+  bottom: -70px !important;
+}
+#header-nav .nav-link {
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+}
+    @media only screen and (max-width: 1400px){
+  #header-nav .nav-link {
+    color: white;
+    font-size: 18px;
+    margin-left: 18px;
+  }
+}
+
+@media only screen and (min-width: 1133px) and (max-width: 1275px) {
+  #header-nav .nav-link {
+    color: white;
+    font-size: 15px;
+    margin-left: 10px;
+  } 
+}
+@media only screen and (min-width: 1035px) and (max-width: 1132px) {
+  #header-nav .nav-link {
+    color: white;
+    font-size: 15px;
+    margin-left: 10px;
+  } 
+  #searchText{
+    width: 120px;
+  }
+  #submitBtn{
+    width: 60px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1034px) {
+  #header-nav .nav-link {
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+  } 
+
+#searchText{
+  width: 100px;
+}
+#submitBtn{
+  width: 50px;
+  display: flex;
+  justify-content: center;
+}
+}
+@media only screen and (max-width: 531px) {
+  .poster {
+  margin: 50px auto !important;
+  width: 230px !important;
+}
+}
+
+.poster {
+  margin: 50px 20px;
+}
+</style>    
+
+
+</head>
+
+<body style="background-color:black;" color="height:auto;">
+
+
+    <div class="scroll-bar">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE-edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Cuchiddy Movies Website</title>
+            <link rel="stylesheet" href="style.css">
+            <!-- Box Icons -->
+            <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+          <!-- Link Swiper's CSS -->
+          <link 
+          rel="stylesheet" 
+          href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" 
+          />
+        </head>
+        <body>
+            <!-- Navbar -->
+            <header>
+                <a href="#" class="logo">
+                    <i class='bx bxs-movie'></i> Cuchiddy
+                </a>
+                <div class="bx bx-menu" id="menu-icon"></div>
+        
+                <!-- Menu -->
+                <ul class="navbar">
+                    <li><a href="#home" class="home-active">Home</a></li>
+                    <li><a href="#movies">Movies</a></li>
+                    <li><a href="#coming">Coming</a></li>
+                    <li><a href="#newsletter">Newsletter</a></li>
+                </ul>
+                <a href="#" class="btn">Sign In</a>
+            </header>
+
+
+            
+        
+
+    <!----------------------scroll back to top button-->
+    <button id="scrollToTopButton" title="Go to top" class="ml-5">
+      <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+    </button>
+    <script>
+        $(document).ready(function() {
+            var scrollTopButton = document.getElementById("scrollToTopButton");
+            window.onscroll = function() {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    scrollTopButton.style.display = "block";
+                } else {
+                    scrollTopButton.style.display = "none";
+                }
+            }
+
+            $("#scrollToTopButton").click(function() {
+                $('html ,body').animate({
+                    scrollTop: 0
+                }, 800)
+            });
+        });
+    </script>
+    <script>
+        function logout() {
+            window.location.replace("login.html");
+        }
+    </script>
+    <!-- footer scripts -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/main-min.js"></script>
+
+    <script>
+        jQuery('#waterdrop').raindrops({
+            color: '#292c2f',
+            canvasHeight: 150,
+            density: 0.1,
+            frequency: 20
+        });
+    </script>
+    <!-- bootsstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="./static/script.js"></script>
+</body>
+
+</html>
+        
+        <!-- Newsletter  -->
+        <section class="newsletter" id="newsletter">
+            <h2>Subscribe To Get <br>Newsletter</h2>
+            <form action="">
+                <input type="email" class="email" placeholder="Enter Email" required>
+                <input type="submit" value="Subscribe" class="btn">
+            </form>
+        </section>
+        
+        <!-- Footer  -->
+        <section class="footer">
+            <a href="" class="logo">
+                <i class="bx bxs-movie"></i>Cuchiddy
+            </a>
+            <div class="social">
+                <a href=""><i class='bx bxl-youtube'></i></a>
+                <a href=""><i class='bx bxl-discord'></i></a>
+                <a href=""><i class='bx bxl-tiktok'></i></a>
+            </div>
+        </section>
+        
+        <!-- Copyright  -->
+         <div class="copyright">
+            <p>&#169; 2023-2034 cuchiddy ||  All Right Reserved</p>
+         </div>
+        
+        
+        
+            <!-- Swiper JS -->
+          <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        
+          <!-- Link To Custom Js -->
+          <script src="main.js"></script>
+        </body>
+        </html>
+    
+    <!----------------------scroll back to top button-->
+    <button id="scrollToTopButton" title="Go to top" class="ml-5">
+      <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+    </button>
+    <script>
+      $(document).ready(function () {
+        var scrollTopButton = document.getElementById("scrollToTopButton");
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollTopButton.style.display = "block";
+          } else {
+            scrollTopButton.style.display = "none";
+          }
+        }
+
+        $("#scrollToTopButton").click(function () {
+          $('html ,body').animate({ scrollTop: 0 }, 800)
+        });
+      });
+    </script>
+<script>
+  function logout(){
+    window.location.replace("login.html");
+  }
+  </script>
+    <!-- footer scripts -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/main-min.js"></script>
+
+    <script>
+      jQuery('#waterdrop').raindrops({
+        color: '#292c2f',
+        canvasHeight: 150,
+        density: 0.1,
+        frequency: 20
+      });
+    </script>
+    <!-- bootsstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"></script>
+    <script src="./static/script.js"></script>
+</body>
+</html>
